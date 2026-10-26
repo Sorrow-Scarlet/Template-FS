@@ -1,0 +1,5 @@
+/.vscode/obj
+/.vscode/.SageFs
+/*/Assemblies/*
+/.sharplsp
+.fake

@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>net10.0</TargetFramework>
+		<PlatformTarget>x64</PlatformTarget>
+		<LangVersion>latest</LangVersion>
+
+		<!-- Modify RootNamespace, AssemblyName, OutputPath, VersionPrefix -->
+		<RootNamespace>Template</RootNamespace>
+		<AssemblyName>Template</AssemblyName>
+		<OutputPath>../1.7/Assemblies</OutputPath>
+		<VersionPrefix>0.1.0.0</VersionPrefix>
+
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<GenerateDependencyFile>false</GenerateDependencyFile>
+		<Optimize>true</Optimize>
+		<DebugType>embedded</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    </PropertyGroup>
+
+    <ItemGroup>
+	 	<Compile Include="../Source/Template/Main.fs" />
+    
+		<PackageReference Include="Krafs.Rimworld.Ref" Version="1.7.*-*" />
+		<!-- *Uncomment for Harmony* -->
+		<!-- <PackageReference Include="Lib.Harmony" Version="*" /> -->
+	</ItemGroup>
+
+</Project>
